@@ -2,97 +2,97 @@
 Les commandes les plus utilisées : Créer un dossier dans HDFS :
 
 ### hadoop fs -mkdir 
-Exemple :
+  Exemple :
 
-hadoop fs -mkdir /user/monDossier
+* hadoop fs -mkdir /user/monDossier
 
-hadoop fs -mkdir /user/monDossier1  /user/monDossier2  /user/monDossier3
+* hadoop fs -mkdir /user/monDossier1  /user/monDossier2  /user/monDossier3
 
-commande :
+  commande :
 
 ### hadoop fs -ls 
-Exemple :
+  Exemple :
 
-hadoop fs -ls /user
+* hadoop fs -ls /user
 
-hadoop fs -ls /user/monDossier
+* hadoop fs -ls /user/monDossier
 ## Charger un ou plusieurs fichiers du local à HDFS:
 
-Commande :
+ Commande :
 
 ### hadoop fs -put  
-Exemple :
+  Exemple :
 
-hadoop fs -put /home/monFichier.txt /user/monDossier
+* hadoop fs -put /home/monFichier.txt /user/monDossier
 ## Exporter un ou plusieurs fichiers de HDFS au local:
 
-Commande:
+  Commande:
 
 ### hadoop fs -get  
-Exemple :
+  Exemple :
 
-hadoop fs -get /user/monDossier/monFichier.txt /home
+* hadoop fs -get /user/monDossier/monFichier.txt /home
 ## Copier un ou plusieurs fichiers dans HDFS:
 
-Commande :
+  Commande :
 
 ### hadoop fs -cp   
-Exemple :
+  Exemple :
 
-hadoop fs -cp /user/monDossier1/monFichier.txt  /user/monDossier2
+* hadoop fs -cp /user/monDossier1/monFichier.txt  /user/monDossier2
 ## Déplacer un ou plusieurs fichiers dans HDFS:
 
-Commande :
+  Commande :
 
 ### hadoop fs -mv   
-Exemple :
+  Exemple :
 
-hadoop fs -mv /user/monDossier1/monFichier.txt  /user/monDossier2
+* hadoop fs -mv /user/monDossier1/monFichier.txt  /user/monDossier2
 ## Charger un ou plusieurs fichiers du local à HDFS: Cette commande est similaire à -put
 
-Commande :
+  Commande :
  
 ### hadoop fs -copyFromLocal  
-Exemple :
+  Exemple :
 
-hadoop fs -copyFromLocal /home/monFichier.txt /user/monDossier
+* hadoop fs -copyFromLocal /home/monFichier.txt /user/monDossier
 ## Exporter un ou plusieurs fichiers de HDFS au local:
 
-Commande:
+  Commande:
 
 ### hadoop fs -copyToLocal  
-Exemple :
+  Exemple :
 
-hadoop fs -copyToLocal /user/monDossier/monFichier.txt /home
+* hadoop fs -copyToLocal /user/monDossier/monFichier.txt /home
 ## Cette commande est similaire à -get Afficher le contenu d’un fichier:
 
-Commande:
+  Commande:
 
 ### hadoop fs -cat <Path[Filename]>
 Exemple :
 
-hadoop fs -cat /user/monFichier.txt
+* hadoop fs -cat /user/monFichier.txt
 ## Afficher les dernières lignes d’un fichier:
 
-Commande :
+  Commande :
 
 ### hadoop fs -tail <Path[Filename]>
-Exemple :
+  Exemple :
 
-hadoop fs -tail /user/monFichier.txt
+* hadoop fs -tail /user/monFichier.txt
 ## Supprimer un fichier dans HDFS:
 
 Commande :
 
 ### hadoop fs -rm 
-Exemple :
+   Exemple :
 
-hadoop fs -rm /user/monFichier.txt
+* hadoop fs -rm /user/monFichier.txt
 ## Suppression récursive dans HDFS:
 
-Commande :
+  Commande :
 
 ### hadoop fs -rmr 
-Exemple :
+    Exemple :
 
-hadoop fs -rmr /user/
+* hadoop fs -rmr /user/
