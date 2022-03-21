@@ -1,2 +1,1 @@
-# projet_test
-# quelques commandes Git
+# commandes Git
